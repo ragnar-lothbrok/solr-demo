@@ -1,4 +1,4 @@
-package com.home;
+package com.solr;
 
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -20,7 +20,7 @@ import org.springframework.data.solr.core.DefaultQueryParser;
 import org.springframework.data.solr.core.SolrTemplate;
 import org.springframework.data.solr.core.query.FilterQuery;
 
-import com.home.solr.analyser.EnglishKeywordAnalyzer;
+import com.solr.analyser.EnglishKeywordAnalyzer;
 
 @Configuration
 public class SolrConfiguration {

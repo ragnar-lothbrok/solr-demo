@@ -1,4 +1,4 @@
-package com.home.solr.analyser;
+package com.solr.analyser;
 
 import org.apache.lucene.analysis.TokenStream;
 import org.apache.lucene.analysis.Tokenizer;
