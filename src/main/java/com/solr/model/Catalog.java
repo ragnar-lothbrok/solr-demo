@@ -15,6 +15,7 @@ public class Catalog {
 	private String vendor;
 	private int vendorInventory;
 	private float vendorPrice;
+	private Long popularity;
 	
 	public static void main(String[] args) throws JsonProcessingException {
 		

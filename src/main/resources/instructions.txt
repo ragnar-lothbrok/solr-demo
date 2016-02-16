@@ -1,1 +1,46 @@
-bin/solr -e exclusively_catalog
+bin/solr create -c exclusively_catalog
+
+sudo su - solr -c "/opt/solr/bin/solr create -c gettingstarted -n data_driven_sc
+
+
+{
+	"title": "1CUte Teddy",
+	"sku": "1&&2345ABC!@!@",
+	"itemName": "Mobile Phones",
+	"category": "jack and johns",
+	"vendor": "ISI iSIS"
+}
+
+http://localhost:8983/solr/exclusively_catalog/select?q=bear&df=test_ngram&wt=json&indent=true&spellcheck=true&spellcheck.build=true
+
+
+http://localhost:8983/solr/exclusively_catalog/select?q=Jeans&wt=json&indent=true
+
+OR
+
+http://localhost:8983/solr/exclusively_catalog/select?q=*je*&wt=json&indent=true [Slower]
+{
+  "responseHeader":{
+    "status":0,
+    "QTime":0,
+    "params":{
+      "q":"Jeans",
+      "indent":"true",
+      "wt":"json"}},
+  "response":{"numFound":1,"start":0,"docs":[
+      {
+        "title":["Men's jeans"],
+        "sku":"1&&2345ABC!@!@",
+        "itemName":["Navi blue Jeans"],
+        "category":["Jeans"],
+        "vendor":"ISI ISIS",
+        "vendorInventory":[0],
+        "vendorPrice":0.0,
+        "id":"66462c06-72a7-4aa9-a3b8-37a72d713854",
+        "_version_":1526228830341038080}]
+  }}
+
+
+
+
+
